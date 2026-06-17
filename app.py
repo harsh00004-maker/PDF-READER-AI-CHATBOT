@@ -1,6 +1,4 @@
 import streamlit as st
-from google.oauth2 import service_account
-from google.cloud import storage
 from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 import faiss
@@ -9,12 +7,6 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import os
 
-#  Credentials load karein
-creds_dict = st.secrets["streamlit-gcp@enhanced-mote-499706-i1.iam.gserviceaccount.com"]
-credentials = service_account.Credentials.from_service_account_info(creds_dict)
-
-# Yahan project id daal di hai
-client = storage.Client(credentials=credentials, project="enhanced-mote-499706-i1")
 
 # Load environment variables
 load_dotenv()
