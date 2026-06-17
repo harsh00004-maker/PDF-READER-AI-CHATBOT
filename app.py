@@ -1,7 +1,6 @@
 import streamlit as st
 from google.oauth2 import service_account
 from google.cloud import storage
-import streamlit as st
 from PyPDF2 import PdfReader
 from sentence_transformers import SentenceTransformer
 import faiss
