@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 import os
 
 #  Credentials load karein
-creds_dict = st.secrets["gcp_service_account"]
+creds_dict = st.secrets["streamlit-gcp@enhanced-mote-499706-i1.iam.gserviceaccount.com"]
 credentials = service_account.Credentials.from_service_account_info(creds_dict)
 
 # Yahan project id daal di hai
