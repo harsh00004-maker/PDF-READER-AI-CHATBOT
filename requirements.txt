@@ -7,5 +7,3 @@ python-dotenv
 google-generativeai
 PyPDF2
 numpy
-google-cloud-storage
-google-auth
